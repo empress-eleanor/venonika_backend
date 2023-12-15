@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Guilds {
+  id: String!
+  name: String!
+  icon: String!
+  owner: Boolean!
+  permissions: String!
+  features: [String!]!
+}
+
+type Query {
+  getBotGuilds: [Guilds!]!
+  getUserGuilds(userId: String!): [Guilds!]!
+}
